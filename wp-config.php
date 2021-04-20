@@ -7,5 +7,3 @@
 require_once('vendor/autoload.php');
 require_once('config/application.php');
 require_once(ABSPATH . 'wp-settings.php');
-
-define('FS_METHOD', 'direct');
