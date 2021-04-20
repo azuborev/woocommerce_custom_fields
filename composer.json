@@ -21,7 +21,9 @@
     "wpackagist-plugin/custom-post-type-ui":">=1.6.0",
     "wpackagist-plugin/wordfence":">=7.3.1",
     "wpackagist-plugin/woocommerce": "^5.2",
-    "wpackagist-plugin/members": "^3.1"
+    "wpackagist-plugin/members": "^3.1",
+    "wpackagist-plugin/wc-ukr-shipping": "^1.7",
+    "wpackagist-plugin/fondy-woocommerce-payment-gateway": "^2.6"
   },
   "extra": {
     "installer-paths": {
