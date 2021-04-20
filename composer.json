@@ -19,7 +19,9 @@
     "roots/wp-password-bcrypt": "1.0.0",
     "wpackagist-plugin/wordpress-seo": "*",
     "wpackagist-plugin/custom-post-type-ui":">=1.6.0",
-    "wpackagist-plugin/wordfence":">=7.3.1"
+    "wpackagist-plugin/wordfence":">=7.3.1",
+    "wpackagist-plugin/woocommerce": "^5.2",
+    "wpackagist-plugin/members": "^3.1"
   },
   "extra": {
     "installer-paths": {
