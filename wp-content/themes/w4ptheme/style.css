@@ -1,0 +1,14 @@
+/*
+Theme Name: W4PTheme
+Theme URI:
+Description: HTML5-based WordPress theme.
+Author:
+Author URI:
+Text Domain: w4ptheme
+Domain Path: /languages
+Version: 1.0
+License: BSD 2-Clause
+License URI: http://opensource.org/licenses/bsd-license.php
+*/
+
+@import "css/application.css";

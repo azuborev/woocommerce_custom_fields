@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes" />
+    <title></title>
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="favicons/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="favicons/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="favicons/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="favicons/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="favicons/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="favicons/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="favicons/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="favicons/apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="favicons/favicon-196x196.png" sizes="196x196" />
+    <link rel="icon" type="image/png" href="favicons/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="favicons/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="favicons/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="favicons/favicon-128.png" sizes="128x128" />
+    <meta name="application-name" content="&nbsp;" />
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta name="msapplication-TileImage" content="favicons/mstile-144x144.png" />
+    <meta name="msapplication-square70x70logo" content="favicons/mstile-70x70.png" />
+    <meta name="msapplication-square150x150logo" content="favicons/mstile-150x150.png" />
+    <meta name="msapplication-wide310x150logo" content="favicons/mstile-310x150.png" />
+    <meta name="msapplication-square310x310logo" content="favicons/mstile-310x310.png" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/application.css">
+</head>
+
+<body>
+    <div class="off-canvas-wrapper">
+        <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+            <div class="off-canvas position-right" id="offCanvas" data-off-canvas data-position="right" data-auto-focus="false">
+                <nav class="offCanvas-navigation">
+                    <ul class="siteNavigation siteNavigation--mobile u-list--plain js-mobileNavigation">
+                        <li class="has-subNav js-hasSubNav">
+                            <a href="#">
+                About
+                <span class="siteNavigation-subNavToggle js-subNavToggle"></span>
+            </a>
+                            <ul class="u-list--plain js-subNav">
+                                <li><a href="#">Our Team</a></li>
+                                <li><a href="#">Partnership</a></li>
+                            </ul>
+                        </li>
+                        <li class="has-subNav js-hasSubNav">
+                            <a href="#">For the arts community
+                <span class="siteNavigation-subNavToggle js-subNavToggle"></span>
+            </a>
+                            <ul class="u-list--plain js-subNav">
+                                <li><a href="#">Our Grants</a></li>
+                                <li><a href="#">Grant Recipients</a></li>
+                                <li><a href="#">Learning Center</a></li>
+                                <li><a href="#">Events for Artists</a></li>
+                            </ul>
+                        </li>
+                        <li class="has-subNav js-hasSubNav">
+                            <a href="#">Explore the arts
+                <span class="siteNavigation-subNavToggle js-subNavToggle"></span>
+            </a>
+                            <ul class="u-list--plain js-subNav">
+                                <li><a href="#">Events</a></li>
+                                <li><a href="#">Venue Directory</a></li>
+                                <li><a href="#">Local Artists Directory</a></li>
+                            </ul>
+                        </li>
+                        <li class="has-subNav js-hasSubNav">
+                            <a href="#">Our journal
+                <span class="siteNavigation-subNavToggle js-subNavToggle"></span>
+            </a>
+                            <ul class="u-list--plain js-subNav">
+                                <li><a href="#">Learning Center</a></li>
+                                <li><a href="#">Visual Arts</a></li>
+                                <li><a href="#">Music</a></li>
+                                <li><a href="#">Performing Arts</a></li>
+                                <li><a href="#">Literature</a></li>
+                                <li><a href="#">News</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Contacts
+                <!-- TODO: .siteNavigation-subNavToggle could be outputted in every item, if there is no subNav it wil be hidden via css -->
+                <span class="siteNavigation-subNavToggle js-subNavToggle"></span>
+            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="offCanvas-social">
+                    <ul class="socialList u-list--plain u-list--inline">
+                        <li>
+                            <a href="#" target="_blank" title="Follow us on Twitter">
+                                <svg class='svgIcon'>
+                <use xlink:href='#twitter'/>
+            </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank" title="Follow us on Facebook">
+                                <svg class='svgIcon'>
+                <use xlink:href='#facebook'/>
+            </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank" title="Follow us on Youtube">
+                                <svg class='svgIcon'>
+                <use xlink:href='#youtube'/>
+            </svg>
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="off-canvas-content" data-off-canvas-content>
+                <!-- NOTE: Index page have another header layout -->
+                <header class="siteHeader siteHeader--headerSection">
+                    <div class="row siteHeader-inner">
+                        <section class="row column siteHeader-top">
+                            <div class="small-8 medium-3 column">
+                                <div class="siteHeader-logo">
+                                    <a href="#" title="Creative Pinellas">
+                                        <svg class='svgIcon svgIcon--logo'>
+                            <use xlink:href='#logoFull'/>
+                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="small-4 medium-9 column u-text--right">
+                                <div class="show-for-medium siteHeader-social">
+                                    <ul class="socialList u-list--plain u-list--inline">
+                                        <li>
+                                            <a href="#" target="_blank" title="Follow us on Twitter">
+                                                <svg class='svgIcon'>
+                <use xlink:href='#twitter'/>
+            </svg>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" target="_blank" title="Follow us on Facebook">
+                                                <svg class='svgIcon'>
+                <use xlink:href='#facebook'/>
+            </svg>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" target="_blank" title="Follow us on Youtube">
+                                                <svg class='svgIcon'>
+                <use xlink:href='#youtube'/>
+            </svg>
+                                            </a>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                                <nav class="show-for-medium siteHeader-topNav">
+                                    <ul class="siteNavigation u-list--plain u-list--inline">
+                                        <li>
+                                            <a href="#">Contact Us</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                                <nav class="show-for-large siteHeader-mainNav">
+                                    <ul class="siteNavigation siteNavigation--header u-list--plain u-list--inline u-text--left js-touchNav">
+                                        <li class="has-subNav js-hasSubNav">
+                                            <a href="#">About</a>
+                                            <ul class="u-list--plain">
+                                                <li><a href="#">Our Team</a></li>
+                                                <li><a href="#">Partnership</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="has-subNav js-hasSubNav">
+                                            <a href="#">For the arts community</a>
+                                            <ul class="u-list--plain">
+                                                <li><a href="#">Oure Grants</a></li>
+                                                <li><a href="#">Grant Recipients</a></li>
+                                                <li><a href="#">Learning Center</a></li>
+                                                <li><a href="#">Events for Artists</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="has-subNav js-hasSubNav">
+                                            <a href="#">Explore the arts</a>
+                                            <ul class="u-list--plain">
+                                                <li><a href="#">Events</a></li>
+                                                <li><a href="#">Venue Directory</a></li>
+                                                <li><a href="#">Local Artists Directory</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="has-subNav js-hasSubNav">
+                                            <a href="#">Our journal</a>
+                                            <ul class="u-list--plain">
+                                                <li><a href="#">Learning Center</a></li>
+                                                <li><a href="#">Visual Arts</a></li>
+                                                <li><a href="#">Music</a></li>
+                                                <li><a href="#">Performing Arts</a></li>
+                                                <li><a href="#">Literature</a></li>
+                                                <li><a href="#">News</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </nav>
+                                <a href="#" class="siteHeader-searchToggle searchToggle js-toggle" data-toggle="widget_search"><i class="fa fa-search" aria-hidden="true"></i></a>
+                                <a href="#" class="hide-for-large mobileNavToggle js-mobileNavToggle" data-toggle="offCanvas" data-open="CLOSE" data-close="MENU">
+                                    <span class="mobileNavToggle-hamburger"><span></span></span>
+                                </a>
+                            </div>
+                        </section>
+                        <section class="row column medium-collapse siteHeader-widgets">
+                            <div class="medium-6 medium-offset-6 column">
+                                <div id="search-2" class="widget widget_search">
+                                    <form role="search" method="get" id="searchform" action="http://creativepinellas.loc/">
+                                        <div class="row medium-collapse">
+                                            <div class="small-8 column">
+                                                <label for="s" class="screen-reader-text">Search for:</label>
+                                                <input type="search" id="s" name="s" value="" placeholder="e.g gallery opening">
+                                            </div>
+                                            <div class="small-4 column">
+                                                <input type="submit" value="Search" id="searchsubmit" class="btn btn--fullWidth btn--white">
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+
+                            </div>
+                        </section>
+                        <section class="row column headerSection">
+                            <div class="medium-6 large-7 column">
+                                <div class="headerSection-poster">
+                                    <img src="http://placehold.it/960x650" srcset="http://placehold.it/960x650 480w, http://placehold.it/1600x1080 768w, http://placehold.it/1060x715 1200w" alt="">
+                                </div>
+                            </div>
+                            <div class="medium-6 large-5 column">
+                                <div class="headerSection-text">
+                                    <h1>A Little Fun with Miniature Curiousa</h1>
+                                    <p class="">The Inventively Low-Fi, Mixed-media Mavens Perform with Bands Laghima and Bubble Boys at Venture Compound</p>
+                                    <a href="#" class="btn btn--white">SEE EVENT</a>
+                                </div>
+                            </div>
+                        </section>
+
+                    </div>
+                </header>
+
+                <section class="siteBody">
+
+                    <section class="homeSection homeSection--homeIntro">
+                        <div class="row homeSection-text">
+                            <div class="medium-11 medium-centered large-uncentered large-8 column">
+                                <h1>What is Creative Pinellas?</h1>
+                                <p>Body font is set to 16px pragmatica-web. All other relationships cascade from the base body font. P size is 1em/1.6em, Pragmatica Light, 300 weight.<br></p>
+                            </div>
+                        </div>
+                        <div class="row small-collapse homeSection--homeIntro-gridList">
+                            <div class="medium-4 column">
+                                <div class="promoList-item">
+                                    <a href="#" class="js-touchFocus">
+                                        <div class="promoList-item-image">
+                                            <img src="http://placehold.it/960x960" alt="" srcset="http://placehold.it/960x960 480w, http://placehold.it/1480x1480 768w, http://placehold.it/480x480 1200w">
+                                        </div>
+                                        <div class="promoList-item-body">
+                                            <h3>EXPLORE ART VENUES</h3>
+                                            <p>Find places to see and engage with art.</p>
+                                            <span class="promoList-item-categoryDecor" style="background-color: rgb(247,148,29);"></span>
+                                        </div>
+                                        <div class="promoList-item-button">
+                                            <span class="btn btn--white">VENUE DIRECTORY</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!--   / promoList-item  -->
+
+                            </div>
+                            <div class="medium-4 column">
+                                <div class="promoList-item">
+                                    <a href="#" class="js-touchFocus">
+                                        <div class="promoList-item-image">
+                                            <img src="http://placehold.it/960x960" alt="" srcset="http://placehold.it/960x960 480w, http://placehold.it/1480x1480 768w, http://placehold.it/480x480 1200w">
+                                        </div>
+                                        <div class="promoList-item-body">
+                                            <h3>EXPLORE ART VENUES</h3>
+                                            <p>Find places to see and engage with art.</p>
+                                            <span class="promoList-item-categoryDecor" style="background-color: rgb(247,148,29);"></span>
+                                        </div>
+                                        <div class="promoList-item-button">
+                                            <span class="btn btn--white">VENUE DIRECTORY</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!--   / promoList-item  -->
+
+                            </div>
+                            <div class="medium-4 column end">
+                                <div class="promoList-item">
+                                    <a href="#" class="js-touchFocus">
+                                        <div class="promoList-item-image">
+                                            <img src="http://placehold.it/960x960" alt="" srcset="http://placehold.it/960x960 480w, http://placehold.it/1480x1480 768w, http://placehold.it/480x480 1200w">
+                                        </div>
+                                        <div class="promoList-item-body">
+                                            <h3>EXPLORE ART VENUES</h3>
+                                            <p>Find places to see and engage with art.</p>
+                                            <span class="promoList-item-categoryDecor" style="background-color: rgb(247,148,29);"></span>
+                                        </div>
+                                        <div class="promoList-item-button">
+                                            <span class="btn btn--white">VENUE DIRECTORY</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!--   / promoList-item  -->
+
+                            </div>
+                        </div>
+                    </section>
+                    <!-- end .homeIntro -->
+
+                    <section class="homeSection communitySection">
+                        <div class="row homeSection-text">
+                            <div class="medium-11 medium-centered large-uncentered large-8 column">
+                                <h1>For The Art Community</h1>
+                                <p>Body font is set to 16px pragmatica-web. All other relationships cascade from the base body font. P size is 1em/1.6em, Pragmatica Light, 300 weight.<br></p>
+                            </div>
+                        </div>
+                        <div class="row js-community-equalHeight">
+                            <div class="small-4 column">
+                                <a href="#" class="communitySection-link" data-equal>
+                                    <span class="communitySection-link-imgLayer" style="background-image: url(http://placehold.it/320x800)"></span>
+                                    <!-- NOTE: background-image: url(path_to_image) this image will be uploaded by client -->
+                                    <span class="communitySection-link-text js-equalizer">Our Grants</span>
+                                </a>
+                            </div>
+                            <div class="small-4 column">
+                                <a href="#" class="communitySection-link" data-equal>
+                                    <span class="communitySection-link-imgLayer" style="background-image: url(http://placehold.it/320x800)"></span>
+                                    <!-- NOTE: background-image: url(path_to_image) this image will be uploaded by client -->
+                                    <span class="communitySection-link-text js-equalizer">Learning Center</span>
+                                </a>
+                            </div>
+                            <div class="small-4 column">
+                                <a href="#" class="communitySection-link" data-equal>
+                                    <span class="communitySection-link-imgLayer" style="background-image: url(http://placehold.it/320x800)"></span>
+                                    <!-- NOTE: background-image: url(path_to_image) this image will be uploaded by client -->
+                                    <span class="communitySection-link-text js-equalizer">Artist Events</span>
+                                </a>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- end .communitySection -->
+
+                    <section class="homeSection homeSection--journalSection">
+                        <div class="row homeSection-text">
+                            <div class="medium-11 medium-centered large-uncentered large-8 column">
+                                <h1>Our Journal</h1>
+                                <p>Body font is set to 16px pragmatica-web. All other relationships cascade from the base body font. P size is 1em/1.6em, Pragmatica Light, 300 weight.<br></p>
+                            </div>
+                        </div>
+                        <div class="row expanded small-collapse small-up-1 medium-up-3 xlarge-up-4 xxlarge-up-5 entityGrid">
+                            <div class="column">
+                                <div class="gridItem gridItem--blog">
+                                    <a href="#" class="js-touchFocus">
+                                        <img src="http://placehold.it/1480x1480" alt="" srcset="http://placehold.it/960x960 480w ,http://placehold.it/1480x1480 768w, http://placehold.it/680x680 1024w,  http://placehold.it/940x940 1400w">
+                                        <span class="gridItem-categoryDecor" style="background-color: #f7941d"></span>
+                                        <div class="gridItem-info">
+                                            <h3>OPERA MADE NEW OPERA MADE NEW OPERA MADE NEW OPERA MADE NEW</h3>
+                                            <p>Tarpon Springs Company Re-Imagines Opera for Today's Audience (...)</p>
+                                            <p><strong>Read Post</strong></p>
+                                            <p class="u-text--upper"><i>PERFORMING ARTS</i></p>
+                                        </div>
+                                    </a>
+                                </div>
+
+                            </div>
+                            <div class="column">
+                                <div class="gridItem gridItem--blog">
+                                    <a href="#" class="js-touchFocus">
+                                        <img src="http://placehold.it/1480x1480" alt="" srcset="http://placehold.it/960x960 480w ,http://placehold.it/1480x1480 768w, http://placehold.it/680x680 1024w,  http://placehold.it/940x940 1400w">
+                                        <span class="gridItem-categoryDecor" style="background-color: #f7941d"></span>
+                                        <div class="gridItem-info">
+                                            <h3>OPERA MADE NEW OPERA MADE NEW OPERA MADE NEW OPERA MADE NEW</h3>
+                                            <p>Tarpon Springs Company Re-Imagines Opera for Today's Audience (...)</p>
+                                            <p><strong>Read Post</strong></p>
+                                            <p class="u-text--upper"><i>PERFORMING ARTS</i></p>
+                                        </div>
+                                    </a>
+                                </div>
+
+                            </div>
+                            <div class="column">
+                                <div class="gridItem gridItem--blog">
+                                    <a href="#" class="js-touchFocus">
+                                        <img src="http://placehold.it/1480x1480" alt="" srcset="http://placehold.it/960x960 480w ,http://placehold.it/1480x1480 768w, http://placehold.it/680x680 1024w,  http://placehold.it/940x940 1400w">
+                                        <span class="gridItem-categoryDecor" style="background-color: #f7941d"></span>
+                                        <div class="gridItem-info">
+                                            <h3>OPERA MADE NEW OPERA MADE NEW OPERA MADE NEW OPERA MADE NEW</h3>
+                                            <p>Tarpon Springs Company Re-Imagines Opera for Today's Audience (...)</p>
+                                            <p><strong>Read Post</strong></p>
+                                            <p class="u-text--upper"><i>PERFORMING ARTS</i></p>
+                                        </div>
+                                    </a>
+                                </div>
+
+                            </div>
+                            <div class="column">
+                                <div class="gridItem gridItem--blog">
+                                    <a href="#" class="js-touchFocus">
+                                        <img src="http://placehold.it/1480x1480" alt="" srcset="http://placehold.it/960x960 480w ,http://placehold.it/1480x1480 768w, http://placehold.it/680x680 1024w,  http://placehold.it/940x940 1400w">
+                                        <span class="gridItem-categoryDecor" style="background-color: #f7941d"></span>
+                                        <div class="gridItem-info">
+                                            <h3>OPERA MADE NEW OPERA MADE NEW OPERA MADE NEW OPERA MADE NEW</h3>
+                                            <p>Tarpon Springs Company Re-Imagines Opera for Today's Audience (...)</p>
+                                            <p><strong>Read Post</strong></p>
+                                            <p class="u-text--upper"><i>PERFORMING ARTS</i></p>
+                                        </div>
+                                    </a>
+                                </div>
+
+                            </div>
+                            <div class="column">
+                                <div class="gridItem gridItem--blog">
+                                    <a href="#" class="js-touchFocus">
+                                        <img src="http://placehold.it/1480x1480" alt="" srcset="http://placehold.it/960x960 480w ,http://placehold.it/1480x1480 768w, http://placehold.it/680x680 1024w,  http://placehold.it/940x940 1400w">
+                                        <span class="gridItem-categoryDecor" style="background-color: #f7941d"></span>
+                                        <div class="gridItem-info">
+                                            <h3>OPERA MADE NEW OPERA MADE NEW OPERA MADE NEW OPERA MADE NEW</h3>
+                                            <p>Tarpon Springs Company Re-Imagines Opera for Today's Audience (...)</p>
+                                            <p><strong>Read Post</strong></p>
+                                            <p class="u-text--upper"><i>PERFORMING ARTS</i></p>
+                                        </div>
+                                    </a>
+                                </div>
+
+                            </div>
+                            <div class="column">
+                                <div class="gridItem gridItem--blog">
+                                    <a href="#" class="js-touchFocus">
+                                        <img src="http://placehold.it/1480x1480" alt="" srcset="http://placehold.it/960x960 480w ,http://placehold.it/1480x1480 768w, http://placehold.it/680x680 1024w,  http://placehold.it/940x940 1400w">
+                                        <span class="gridItem-categoryDecor" style="background-color: #f7941d"></span>
+                                        <div class="gridItem-info">
+                                            <h3>OPERA MADE NEW OPERA MADE NEW OPERA MADE NEW OPERA MADE NEW</h3>
+                                            <p>Tarpon Springs Company Re-Imagines Opera for Today's Audience (...)</p>
+                                            <p><strong>Read Post</strong></p>
+                                            <p class="u-text--upper"><i>PERFORMING ARTS</i></p>
+                                        </div>
+                                    </a>
+                                </div>
+
+                            </div>
+                            <div class="column">
+                                <div class="gridItem gridItem--blog">
+                                    <a href="#" class="js-touchFocus">
+                                        <img src="http://placehold.it/1480x1480" alt="" srcset="http://placehold.it/960x960 480w ,http://placehold.it/1480x1480 768w, http://placehold.it/680x680 1024w,  http://placehold.it/940x940 1400w">
+                                        <span class="gridItem-categoryDecor" style="background-color: #f7941d"></span>
+                                        <div class="gridItem-info">
+                                            <h3>OPERA MADE NEW OPERA MADE NEW OPERA MADE NEW OPERA MADE NEW</h3>
+                                            <p>Tarpon Springs Company Re-Imagines Opera for Today's Audience (...)</p>
+                                            <p><strong>Read Post</strong></p>
+                                            <p class="u-text--upper"><i>PERFORMING ARTS</i></p>
+                                        </div>
+                                    </a>
+                                </div>
+
+                            </div>
+                            <div class="column">
+                                <div class="gridItem gridItem--blog">
+                                    <a href="#" class="js-touchFocus">
+                                        <img src="http://placehold.it/1480x1480" alt="" srcset="http://placehold.it/960x960 480w ,http://placehold.it/1480x1480 768w, http://placehold.it/680x680 1024w,  http://placehold.it/940x940 1400w">
+                                        <span class="gridItem-categoryDecor" style="background-color: #f7941d"></span>
+                                        <div class="gridItem-info">
+                                            <h3>OPERA MADE NEW OPERA MADE NEW OPERA MADE NEW OPERA MADE NEW</h3>
+                                            <p>Tarpon Springs Company Re-Imagines Opera for Today's Audience (...)</p>
+                                            <p><strong>Read Post</strong></p>
+                                            <p class="u-text--upper"><i>PERFORMING ARTS</i></p>
+                                        </div>
+                                    </a>
+                                </div>
+
+                            </div>
+                            <div class="column">
+                                <div class="gridItem gridItem--blog">
+                                    <a href="#" class="js-touchFocus">
+                                        <img src="http://placehold.it/1480x1480" alt="" srcset="http://placehold.it/960x960 480w ,http://placehold.it/1480x1480 768w, http://placehold.it/680x680 1024w,  http://placehold.it/940x940 1400w">
+                                        <span class="gridItem-categoryDecor" style="background-color: #f7941d"></span>
+                                        <div class="gridItem-info">
+                                            <h3>OPERA MADE NEW OPERA MADE NEW OPERA MADE NEW OPERA MADE NEW</h3>
+                                            <p>Tarpon Springs Company Re-Imagines Opera for Today's Audience (...)</p>
+                                            <p><strong>Read Post</strong></p>
+                                            <p class="u-text--upper"><i>PERFORMING ARTS</i></p>
+                                        </div>
+                                    </a>
+                                </div>
+
+                            </div>
+                            <div class="column">
+                                <div class="gridItem gridItem--blog">
+                                    <a href="#" class="js-touchFocus">
+                                        <img src="http://placehold.it/1480x1480" alt="" srcset="http://placehold.it/960x960 480w ,http://placehold.it/1480x1480 768w, http://placehold.it/680x680 1024w,  http://placehold.it/940x940 1400w">
+                                        <span class="gridItem-categoryDecor" style="background-color: #f7941d"></span>
+                                        <div class="gridItem-info">
+                                            <h3>OPERA MADE NEW OPERA MADE NEW OPERA MADE NEW OPERA MADE NEW</h3>
+                                            <p>Tarpon Springs Company Re-Imagines Opera for Today's Audience (...)</p>
+                                            <p><strong>Read Post</strong></p>
+                                            <p class="u-text--upper"><i>PERFORMING ARTS</i></p>
+                                        </div>
+                                    </a>
+                                </div>
+
+                            </div>
+                            <div class="column">
+                                <div class="gridItem gridItem--blog">
+                                    <a href="#" class="js-touchFocus">
+                                        <img src="http://placehold.it/1480x1480" alt="" srcset="http://placehold.it/960x960 480w ,http://placehold.it/1480x1480 768w, http://placehold.it/680x680 1024w,  http://placehold.it/940x940 1400w">
+                                        <span class="gridItem-categoryDecor" style="background-color: #f7941d"></span>
+                                        <div class="gridItem-info">
+                                            <h3>OPERA MADE NEW OPERA MADE NEW OPERA MADE NEW OPERA MADE NEW</h3>
+                                            <p>Tarpon Springs Company Re-Imagines Opera for Today's Audience (...)</p>
+                                            <p><strong>Read Post</strong></p>
+                                            <p class="u-text--upper"><i>PERFORMING ARTS</i></p>
+                                        </div>
+                                    </a>
+                                </div>
+
+                            </div>
+                            <div class="column">
+                                <div class="gridItem gridItem--blog">
+                                    <a href="#" class="js-touchFocus">
+                                        <img src="http://placehold.it/1480x1480" alt="" srcset="http://placehold.it/960x960 480w ,http://placehold.it/1480x1480 768w, http://placehold.it/680x680 1024w,  http://placehold.it/940x940 1400w">
+                                        <span class="gridItem-categoryDecor" style="background-color: #f7941d"></span>
+                                        <div class="gridItem-info">
+                                            <h3>OPERA MADE NEW OPERA MADE NEW OPERA MADE NEW OPERA MADE NEW</h3>
+                                            <p>Tarpon Springs Company Re-Imagines Opera for Today's Audience (...)</p>
+                                            <p><strong>Read Post</strong></p>
+                                            <p class="u-text--upper"><i>PERFORMING ARTS</i></p>
+                                        </div>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </section>
+                    <!-- end .journalSection -->
+
+                </section>
+
+                <footer class="siteFooter">
+                    <div class="siteFooter-inner">
+                        <div class="row medium-collapse">
+                            <div class="large-3 column siteFooter-logo">
+                                <!--    Footer Logo     -->
+                                <a href="#" title="Creative Pinellas">
+                                    <svg class='svgIcon svgIcon--logo'>
+                        <use xlink:href='#logoFull'/>
+                    </svg>
+                                </a>
+                                <!--   / Footer Logo     -->
+                            </div>
+                            <div class="medium-10 large-7 column siteFooter-nav">
+                                <!--        Navigation      -->
+                                <nav>
+                                    <ul class="siteNavigation siteNavigation--footer u-list--plain u-list--inline">
+                                        <li>
+                                            <a href="#">For the arts community</a>
+                                            <ul class="u-list--plain">
+                                                <li><a href="#">Oure Grants</a></li>
+                                                <li><a href="#">Grant Recipients</a></li>
+                                                <li><a href="#">Learning Center</a></li>
+                                                <li><a href="#">Events for Artists</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#">Explore the arts</a>
+                                            <ul class="u-list--plain">
+                                                <li><a href="#">Events</a></li>
+                                                <li><a href="#">Venue Directory</a></li>
+                                                <li><a href="#">Local Artists Directory</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">New Releases</a></li>
+                                    </ul>
+                                </nav>
+                                <!--      / Navigation      -->
+                            </div>
+                            <div class="medium-2 column siteFooter-social">
+                                <!--    Social list, Same as in header  -->
+                                <div class="siteFooter-blockTitle">
+                                    Socialize
+                                </div>
+                                <ul class="socialList u-list--plain u-list--inline">
+                                    <li>
+                                        <a href="#" target="_blank" title="Follow us on Twitter">
+                                            <svg class='svgIcon'>
+                <use xlink:href='#twitter'/>
+            </svg>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" target="_blank" title="Follow us on Facebook">
+                                            <svg class='svgIcon'>
+                <use xlink:href='#facebook'/>
+            </svg>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" target="_blank" title="Follow us on Youtube">
+                                            <svg class='svgIcon'>
+                <use xlink:href='#youtube'/>
+            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+
+                                <!--   / Social list, Same as in header  -->
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="column">
+                                <!--    Footer logotypes    -->
+                                <div class="siteFooter-partnerLogos">
+                                    <a href="#"><img src="images/uploads/Pinellas_County_Government-white.png" alt="" width="150"></a>
+                                    <a href="#"><img src="images/uploads/Vspc_reverse_logo.png" alt="" width="150"></a>
+                                </div>
+                                <!--   / Footer logotypes    -->
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="column">
+                                <!--    Copyright   -->
+                                <div class="siteFooter-copyright">
+                                    <p>
+                                        Copyright 2014 Creative Pinellas. All rights reserved. Creative Pinellas, Inc. 14025 58th Street N. Largo, FL 33760
+                                    </p>
+                                </div>
+                                <!--   / Copyright      -->
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="svgPlaceholder"></div>
+    <script src="https://use.typekit.net/gpb0qdz.js"></script>
+    <script>
+        try {
+            Typekit.load({
+                async: true
+            });
+        } catch (e) {}
+    </script>
+    <script src="js/vendor.min.js"></script>
+    <script src="js/vendor/jquery.swipebox.min.js"></script>
+    <script src="js/app.min.js"></script>
+</body>
+
+</html>

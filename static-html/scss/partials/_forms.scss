@@ -1,0 +1,136 @@
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="search"],
+textarea {
+    width: 100%;
+    padding: 7px 10px 8px;
+    border-radius: 0;
+    -webkit-appearance: none;
+    box-sizing: border-box; // redefine foundation content-box for search type
+    &:focus {
+        //outline-color: ;
+        //border-color: ;
+    }
+    &::placeholder {
+
+    }
+    &.wpcf7-not-valid {
+
+    }
+}
+textarea {
+    resize: vertical;
+    height: 150px;
+}
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+.btn {
+    display: inline-block;
+    margin: 12px 0;
+    padding: 8px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 0;
+    border: 1px solid $black;
+    color: $black;
+    transition: all .3s ease-out;
+    -webkit-appearance: none;
+    appearance: none;
+    &:hover,
+    &:active {
+        cursor: pointer;
+    }
+}
+.btn--fullWidth {
+    width: 100%;
+}
+
+/*  Global Select styling */
+.selectboxit-container {
+    width: 100%;
+    * {
+        font-family: $font-base;
+        font-size: $fontSize-base;
+        font-weight: $fontWeight-light;
+    }
+    .selectboxit-btn {
+        border: 2px solid $black;
+        background: none;
+        &.selectboxit-enabled:hover,
+        &.selectboxit-enabled:focus {
+            color: $black;
+            background: none;
+        }
+    }
+    .selectboxit-text {
+        font-style: italic;
+    }
+    .selectboxit {
+        width: 100%;
+        height: 41px;
+        line-height: 41px;
+        border-radius: 0;
+    }
+    .selectboxit span,
+    & > span {
+        height: 37px;
+        line-height: 37px;
+    }
+    .selectboxit-options a {
+        height: auto;
+        line-height: normal;
+    }
+    .selectboxit-option {
+        position: relative;
+        padding: 8px 20px;
+        transition: all .2s ease-out;
+        &:after {
+            content: '';
+            position: absolute;
+            height: 1px;
+            left: 25px;
+            right: 25px;
+            bottom: 0;
+            background: #f2f2f2;
+            transition: all .2s ease-out;
+        }
+        &.selectboxit-focus {
+            //background: $ocean;
+            a {
+                color: $white;
+            }
+            &:after {
+                //background: $ocean;
+            }
+        }
+    }
+    .selectboxit-list {
+        border-radius: 0;
+        border: none;
+        //box-shadow: 1px 1px 5px $black--40;
+        .selectboxit-option-anchor {
+            display: inline;
+            //color: $ocean;
+            white-space: normal;
+        }
+        .selectboxit-focus {
+            .selectboxit-option-anchor {
+                background: none;
+            }
+        }
+    }
+    .selectboxit-option-first,
+    .selectboxit-option-last {
+        border-radius: 0;
+    }
+    .selectboxit-option-last {
+        .selectboxit-option-anchor {
+            &:after {
+                display: none;
+            }
+        }
+    }
+}

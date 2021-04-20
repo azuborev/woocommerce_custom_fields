@@ -1,0 +1,36 @@
+.w4p-option-label {
+  display: inline-block;
+  width: 8em;
+}
+
+div.w4p-social-profile > input,
+div.w4p-contacts-wrapper > input,
+div.w4p-copyright-wrapper > input {
+  width: 30em;
+}
+
+.w4p-social-profile-selector-wrapper {
+  margin-top: 5px;
+}
+
+.select-toggle {
+  width: 100%;
+}
+
+.select-toggle option {
+  width: inherit;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+[tooltip]:after {
+  content: ' ('attr(tooltip)')';
+  color: #b3b3b3;
+  transition: all 0.5s ease;
+  pointer-events: none;
+}
+
+[tooltip]:hover:after {
+  color: #000000;
+}
