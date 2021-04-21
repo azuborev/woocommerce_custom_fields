@@ -73,6 +73,7 @@ wp-content/upgrade
 wp-content/uploads/*
 !wp-content/uploads/.gitkeep
 !wp-content/plugins/hds-system-setup
+!wp-content/plugins/wp-acf-unique_id
 
 # WordPress
 /wp/*
