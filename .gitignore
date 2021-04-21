@@ -72,6 +72,7 @@ wp-content/mu-plugins/*/
 wp-content/upgrade
 wp-content/uploads/*
 !wp-content/uploads/.gitkeep
+!wp-content/plugins/hds-system-setup
 
 # WordPress
 /wp/*

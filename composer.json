@@ -23,7 +23,8 @@
     "wpackagist-plugin/woocommerce": "^5.2",
     "wpackagist-plugin/members": "^3.1",
     "wpackagist-plugin/wc-ukr-shipping": "^1.7",
-    "wpackagist-plugin/fondy-woocommerce-payment-gateway": "^2.6"
+    "wpackagist-plugin/fondy-woocommerce-payment-gateway": "^2.6",
+    "wpackagist-plugin/wp-mail-smtp": "^2.7"
   },
   "extra": {
     "installer-paths": {
