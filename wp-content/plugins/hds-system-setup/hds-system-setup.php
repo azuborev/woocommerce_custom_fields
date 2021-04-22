@@ -11,8 +11,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 require_once( __DIR__ . '/inc/general-settings.php' );
-require_once( __DIR__ . '/inc/acf-filters.php' );
-require_once( __DIR__ . '/inc/meta-user-fields.php' );
+require_once( __DIR__ . '/inc/ registration-fields.php' );
 
 
 
