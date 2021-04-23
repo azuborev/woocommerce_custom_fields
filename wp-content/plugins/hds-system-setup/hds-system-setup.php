@@ -10,9 +10,19 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-require_once( __DIR__ . '/inc/general-settings.php' );
-require_once( __DIR__ . '/inc/ registration-fields.php' );
-
-
-
-
+/**
+ * Add general settings, custom pages in admin
+ */
+require_once( __DIR__ . '/general/general-settings.php' );
+/**
+ * File with helper functions
+ */
+require_once (__DIR__ . '/registration-fields/helpers.php');
+/**
+ * Add custom fields on frontend
+ */
+require_once( __DIR__ . '/registration-fields/frontend-fields.php' );
+/**
+ * Add custom fields on backend
+ */
+require_once( __DIR__ . '/registration-fields/backend-fields.php' );

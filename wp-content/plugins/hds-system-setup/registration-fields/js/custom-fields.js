@@ -5,7 +5,7 @@
 
 'use strict';
 
-//on add-user page hide field 'medical_id' if you are not client
+//on add-user page hide field 'medical_id' if you are not customer
 jQuery(document).ready(function($) {
     const med_table = $('.medical-table');
     if($('#role').val() !== 'customer'){
