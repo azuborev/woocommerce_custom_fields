@@ -60,7 +60,7 @@ add_action('acf/render_field_settings/type=text', 'hds_add_readonly_to_text_fiel
  * @return mixed
  */
 function hds_modify_user_table( $column ) {
-    $column['key'] = __( 'Идентификатор', 'hds-settings' );
+    $column['private_id'] = __( 'Идентификатор', 'hds-settings' );
 	$column['medical_id'] = __( 'ID врача/клиники', 'hds-settings' );
     return $column;
 }
@@ -71,14 +71,14 @@ add_filter( 'manage_users_columns', 'hds_modify_user_table' );
  *
  * @param $val
  * @param $column_name
- * @param $user_id
+ * @param $private_id
  * @return mixed|string
  */
 function hds_modify_user_table_row( $val, $column_name, $user_id ) {
     switch ($column_name) {
-        case 'key' :
+        case 'private_id' :
 
-            return get_user_meta( $user_id, 'user_key', true ) ? : '';
+            return get_user_meta( $user_id, 'private_id', true ) ? : '';
 	    case 'medical_id' :
 
 		    return get_user_meta( $user_id, 'medical_id', true ) ? : '';

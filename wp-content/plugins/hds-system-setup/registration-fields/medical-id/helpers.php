@@ -27,7 +27,7 @@ function check_user_exist_by_id( $medical_id ) {
  * Sanitize and save field 'medical_id'
  */
 function hds_user_registration( $user_id ) {
-	if ( ! empty( $_POST['medical_id'] ) ) {
+	if ( user_can( $user_id, 'customer' ) ) {
 		update_user_meta( $user_id, 'medical_id', intval( $_POST['medical_id'] ) );
 	}
 }
